@@ -1,0 +1,17 @@
+{
+    "name": "my-botforge-bot",
+    "version": "1.0.0",
+    "description": "A Discord bot created with BotForge.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "@tryforge/forgescript": "^2.5.0",
+        "@tryforge/forge.db": "^2.1.0",
+        "@tryforge/forge.canvas": "^1.2.2",
+        "@tryforge/forge.music": "^1.0.0",
+        "@tryforge/forge.topgg": "^1.0.0",
+        "sqlite3": "^5.1.7"
+    }
+}
