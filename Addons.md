@@ -35,12 +35,14 @@ const client = new ForgeClient({
         db // Adicione a constante 'db' que criamos acima aqui
     ]
 })
+```
 
 🎨 ForgeCanvas (Imagens)
 Geralmente, o ForgeCanvas é "plug-and-play" (só ativar e usar). Você não precisa configurar nada na index.js.
 PORÉM, se você quiser usar Fontes Customizadas (aquela fonte bonita que você baixou), você precisa registrá-las assim que o bot ligar.
 Como registrar fontes:
 Crie um arquivo novo na sua pasta de comandos (ex: src/client/commands/loadFonts.js) e cole isso:
+```javascript
 module.exports = [{
     type: "clientReady", // Executa assim que o bot liga
     code: `
@@ -50,6 +52,6 @@ module.exports = [{
     $log[Fonte customizada carregada com sucesso!]
     `
 }]
-
+```
 Depois, nos seus comandos de imagem, é só usar o nome ArialCustom (ou o nome que você deu) que vai funcionar!
 
