@@ -16,6 +16,26 @@ data: {
   "name": "hello",
   "nsfw": false,
   "options": [
+     {
+      "type": 3,
+      "description": "Escolhas, escolhas e escolhas...",
+      "choices": [
+        {
+          "name": "1",
+          "value": "valor1"
+        },
+        {
+          "name": "2",
+          "value": "valor2"
+        },
+        {
+          "name": "3",
+          "value": "valor3"
+        }
+      ],
+      "name": "opcao-com-escolhas",
+      "required": true
+    },
     {
       "type": 3,
       "description": "Minha incrivel opção",
@@ -46,27 +66,7 @@ data: {
       "description_localizations": {
         "en-US": "English? Alright babye"
       }
-    },
-    {
-      "type": 3,
-      "description": "Escolhas, escolhas e escolhas...",
-      "choices": [
-        {
-          "name": "1",
-          "value": "valor1"
-        },
-        {
-          "name": "2",
-          "value": "valor2"
-        },
-        {
-          "name": "3",
-          "value": "valor3"
-        }
-      ],
-      "name": "opcao-com-escolhas",
-      "required": true
-      }
+     }
     ]
   }
 }
