@@ -5,8 +5,22 @@ const { ForgeDB } = require("@tryforge/forge.db"); // <--- ISSO É NECESSARIO PA
 
 // Extensões basicas que você pode usar (algumas que alguns bots já usam)
 const { ForgeCanvas } = require("@tryforge/forge.canvas");
-const { ForgeMusic } = require("@tryforge/forge.music");
+// ForgeMusic foi retirada por que eu acabei vendo que tem alguns bugs nela, vou logo depois fazer uma versão com ForgeLinked
 const { ForgeTopGG } = require("@tryforge/forge.topgg");
+
+const top = new ForgeTopGG({
+    token: "token da topgg",
+    auth: "seu valor da auth para as webhooks",
+    events: [
+        "error",
+        "posted",
+        "voted"
+        // Os eventos somente irão funcionar caso tenha a webhook da topgg configurada
+    ],
+        post: {
+            interval: 3600000
+        }
+    })
 
 // Relaxe com a questão dos eventos e intents, ativando tudo deve funcionar qualquer categoria do seu bot
 const client = new ForgeClient({
@@ -117,11 +131,7 @@ const client = new ForgeClient({
     new ForgeDB(),
     new ForgeCanvas(),
     new ForgeMusic(),
-    new ForgeTopGG({
-        post: {
-            interval: 3600000
-        }
-    })
+    top
     ],
     prefixes: [
         "prefixo" // Apenas troque "prefixo" pelo prefixo que você quer usar no seu bot, pode usar array que nem o aoi.js // ['prefixo1', 'prefixo2', ...etc]
