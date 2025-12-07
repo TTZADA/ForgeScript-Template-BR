@@ -7,7 +7,7 @@ O ForgeScript é modular, o que significa que você pode plugar ferramentas pode
 ## 🗄️ ForgeDB (Banco de Dados)
 
 O ForgeDB é monstro e suporta vários tipos de conexão, não apenas arquivos JSON locais.
-**Tipos suportados:** `mysql`, `postgres`, `better-sqlite3`, `sqlite`, `mongodb` ou `default` (JSON local).
+**Tipos suportados:** `mysql`, `postgres`, `better-sqlite3`, `sqlite`, `mongodb` ou `default` (SQLite local).
 
 ### Como configurar conexão externa:
 
