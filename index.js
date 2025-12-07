@@ -152,7 +152,7 @@ ForgeDB.variables({
 
 client.functions.load('./src/functions/'); // Exemplo de paths: './functions', './src/functions'
 client.commands.load('./src/client/commands'); // Exemplo de paths: './commands', './src/client/commands'
-client.applicationCommands.load('./src/client/slash'); // Exemplo de paths: './slash', './src/client/slash'
+// client.applicationCommands.load('./src/client/slash'); // Exemplo de paths: './slash', './src/client/slash'
 
 // NUNCA COMPARTILHE OU DEIXE SEU TOKEN EXPOSTO - Isso é para a segurança de teu bot
 client.login("seu incrivel token"); // Apenas troque "seu incrivel token" pelo token do seu bot
